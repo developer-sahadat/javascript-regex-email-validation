@@ -2,14 +2,14 @@ const email_validation=(input)=>{
 // “javascript regex email validation”
 const regex=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-const validCheckOutput=document.getElementById('valid-check-output');
+const output=document.getElementById('valid-check-output');
 
     if(input.match(regex)){
-     validCheckOutput.innerText='Congratulations! Your email is valid'
-     validCheckOutput.style.color='green'
+     output.innerText='Congratulations! Your email is valid'
+     output.style.color='green'
     }else{
-        validCheckOutput.innerText='Sorry! Your email is not valid'
-        validCheckOutput.style.color='red'
+        output.innerText='Sorry! Your email is not valid'
+        output.style.color='red'
     }
 
 }
